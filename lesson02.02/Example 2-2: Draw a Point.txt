@@ -1,0 +1,20 @@
+Example 2-2: Draw a Point
+To set the color of a single pixel within the canvas, we use the
+point() function. It has two parameters that define a position:
+the x coordinate followed by the y coordinate. To create a small
+canvas and a point at the center of it, coordinate (240, 60),
+type:
+
+function setup() {
+	createCanvas(480, 120);
+}
+function draw() {
+	background(204);
+	point(240, 60);
+}
+
+
+Try to write a program that puts a point at each corner of the
+drawing canvas and one in the center. Then take a stab at plac-
+ing points side by side to make horizontal, vertical, and diagonal
+lines.
