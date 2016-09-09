@@ -1,0 +1,47 @@
+Example 2-13: Set Stroke Attributes
+===================================
+
+		The strokeJoin() function changes the way lines are joined
+		(how the corners look), and the strokeCap() function changes
+		how lines are drawn at their beginning and end:
+		
+
+				function setup() {
+					createCanvas(480, 120);
+					strokeWeight(12);
+				}
+				
+				function draw() {
+					background(204);
+					strokeJoin(ROUND);			// Round the stroke corners
+					rect(40, 25, 70, 70);		
+					strokeJoin(BEVEL);			// Bevel the stroke corners
+					rect(140, 25, 70, 70);
+					strokeCap(SQUARE);			// Square the line endings
+					line(270, 25, 340, 95);
+					strokeCap(ROUND);			// Round the line endings
+					line(350, 25, 420, 95);
+				}
+
+		
+		
+		
+		
+		The placement of shapes like rect() and ellipse() are con-
+		trolled with the rectMode() and ellipseMode() functions. Check
+		the p5.js Reference to see examples of how to place rectangles
+		from their center (rather than their upper-left corner), or to
+		draw ellipses from their upper-left corner like rectangles.
+		When any of these attributes are set, all shapes drawn afterward
+		are affected. For instance, in Example 3-12 on page 28, notice
+		how the second and third circles both have the same stroke
+		weight, even though the weight is set only once before both are
+		drawn.
+
+
+
+		Notice that the strokeWeight(12) line appears in setup() instead
+		of in draw(). This is because it doesn’t change at all in our pro-
+		gram, so we can just set it once and for all in setup(). This is
+		more for organization; placing the line in draw() would have the
+		same visual effect.
