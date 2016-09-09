@@ -1,0 +1,11 @@
+Color
+=====
+
+All the shapes so far have been filled white with black outlines.
+To change this, use the fill() and stroke() functions. The val-
+ues of the parameters range from 0 to 255, where 255 is white,
+128 is medium gray, and 0 is black. Figure 3-3 shows how the
+values from 0 to 255 map to different gray levels. The back
+ground() function we’ve seen in previous examples works in the
+same way, except rather than setting the fill or stroke color for
+drawing, it sets the background color of the canvas.
