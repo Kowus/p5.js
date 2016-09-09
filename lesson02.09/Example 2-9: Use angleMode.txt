@@ -1,0 +1,28 @@
+Example 2-9: Use angleMode
+==========================
+
+Alternatively, you can convert your entire sketch to use degrees
+instead of radians using the angleMode() function. This changes
+all functions that accept or return angles to use degrees or radi-
+ans based on which parameter is passed in, instead of you
+needing to convert them. The following example is the same as
+Example 3-8 on page 24, but it uses the angleMode(DEGREES)
+function to define the start and stop values in degrees:
+
+		function setup() {
+			createCanvas(480, 120);
+			angleMode(DEGREES);
+		}
+		function draw() {
+			background(204);
+			arc(90, 60, 80, 80, 0, 90);
+			arc(190, 60, 80, 80, 0, 270);
+			arc(290, 60, 80, 80, 180, 450);
+			arc(390, 60, 80, 80, 45, 225);
+		}
+
+Drawing Order
+=============
+
+When a program runs, the computer starts at the top and reads
+each line of code until it reaches the last line and then stops.
