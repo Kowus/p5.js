@@ -1,0 +1,43 @@
+Example 2-10: Control Your Drawing Order
+========================================
+
+Drawing Order
+=============
+
+When a program runs, the computer starts at the top and reads
+each line of code until it reaches the last line and then stops.
+
+If you want a shape to be drawn on top of all other shapes, it
+needs to follow the others in the code.
+
+
+		function setup() {
+		createCanvas(480, 120);
+		}
+		function draw() {
+		background(204);
+		ellipse(140, 0, 190, 190);
+		// The rectangle draws on top of the ellipse
+		// because it comes after in the code
+		rect(160, 30, 260, 20);
+		}
+
+
+Modify by reversing the order of rect() and ellipse() to see the
+circle on top of the rectangle:
+
+
+		function setup() {
+			createCanvas(480, 120);
+		}
+		function draw() {
+			background(204);
+			rect(160, 30, 260, 20);
+			// The ellipse draws on top of the rectangle
+			// because it comes after in the code
+			ellipse(140, 0, 190, 190);
+		}
+
+
+You can think of it like painting with a brush or making a collage.
+The last element that you add is what’s visible on top.
