@@ -1,0 +1,14 @@
+Example 2-5: Draw a Rectangle
+Rectangles and ellipses are both defined with four parameters:
+the first and second are the x and y coordinates of the anchor
+point, the third for the width, and the fourth for the height. To
+make a rectangle at coordinate (180, 60) with a width of 220
+pixels and height of 40, use the rect() function like this:
+
+function setup() {
+	createCanvas(480, 120);
+}
+function draw() {
+	background(204);
+	rect(180, 60, 220, 40);
+}
