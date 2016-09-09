@@ -1,0 +1,7 @@
+Example 2-15: Control Fill and Stroke
+=====================================
+
+You can use noStroke() to disable the stroke so that there’s no
+outline, and you can disable the fill of a shape with noFill():
+
+
