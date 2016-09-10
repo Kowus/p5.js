@@ -1,0 +1,5 @@
+Custom Shapes
+=============
+
+You’re not limited to using these basic geometric shapes—you
+can also define new shapes by connecting a series of points.
