@@ -1,0 +1,25 @@
+Example 2-17: Set Transparency
+==============================
+
+By adding an optional fourth parameter to fill() or stroke(),
+you can control the transparency. This fourth parameter is
+known as the alpha value, and also uses the range 0 to 255 to
+set the amount of transparency. The value 0 defines the color as
+entirely transparent (it won’t display), the value 255 is entirely
+opaque, and the values between these extremes cause the col-
+ors to mix on screen:
+
+        function setup() {
+            createCanvas(480, 120);
+            noStroke();
+        }
+
+        function draw() {
+            background(204, 226, 225);          // Light blue color
+            fill(255, 0, 0, 160);               // Red color
+            ellipse(132, 82, 200, 200);         // Red circle
+            fill(0, 255, 0, 160);               // Green color
+            ellipse(288, -16, 200, 200);        // Green circle
+            fill(0, 0, 255, 160);               // Blue color
+            ellipse(268, 118, 200, 200);        // Blue circle
+        }
