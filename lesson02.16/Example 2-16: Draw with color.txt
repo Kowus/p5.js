@@ -1,0 +1,28 @@
+Example 2-16: Draw with Color
+=============================
+
+To move beyond grayscale values, you use three parameters to
+specify the red, green, and blue components of a color. Because
+this book is printed in black and white, you’ll see only gray val-
+ues here. Run the code to reveal the colors:
+
+        function setup() {
+            createCanvas(480, 120);
+            noStroke();
+        }
+        function draw() {
+            background(0, 26, 51);
+            fill(255, 0, 0);
+            ellipse(132, 82, 200, 200);
+            fill(0, 255, 0);
+            ellipse(228, -16, 200, 200);
+            fill(0, 0, 255);
+            ellipse(268, 118, 200, 200);
+        }
+
+The colors in the example are referred to as RGB color, which is
+how computers define colors on the screen. The three numbers
+stand for the values of red, green, and blue, and they range from
+0 to 255 the way that the gray values do. These three numbers
+are the parameters for your background(), fill(), and stroke()
+functions.
